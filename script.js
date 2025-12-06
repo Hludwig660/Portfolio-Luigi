@@ -18,3 +18,16 @@ closeNavigationBars.forEach((closeNavigation) => {
 });
 
 annoCorrente.innerHTML = new Date().getFullYear();
+
+let observer = new IntersectionObserver((entries, observer) => {
+  entries
+    .filter((e) => e.isIntersecting)
+    .forEach((entry) => {
+      entry.target.classList.add("fade");
+      observer.unobserve(entry.target);
+    });
+});
+
+document.querySelectorAll(".fade-js").forEach((e) => {
+  observer.observe(e);
+});
