@@ -67,7 +67,7 @@ nav {
   color: var(--primary-text);
   font-size: 2rem;
   display: none;
-  z-index: 2;
+  z-index: 3;
   cursor: pointer;
   transition: all 300ms;
 }
@@ -104,16 +104,18 @@ nav {
 }
 
 .bars-navigation {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
+  inset: 0;
   transform: translateX(-100%);
   padding: 1rem;
+  padding-top: calc(1rem + env(safe-area-inset-top));
+  padding-bottom: calc(1rem + env(safe-area-inset-bottom));
   background: hsla(211, 80%, 20%);
   width: 100%;
   min-height: 100vh;
-  height: 100vh;
+  min-height: 100dvh;
   transition: all 300ms;
+  z-index: 2;
 }
 
 @media (min-width: 620px) {
