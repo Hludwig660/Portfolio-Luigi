@@ -163,7 +163,7 @@ nav {
   color: var(--secondary-text);
 }
 
-.bars-navigation.active + #closeBtn {
+#closeBtn.visible {
   display: block;
 }
 
