@@ -8,22 +8,14 @@ const annoCorrente = document.getElementById("annoCorrente");
 openBtn.addEventListener("click", () => {
   navigationBars.classList.toggle("active");
   openBtn.classList.toggle("rotate");
-  if (navigationBars.contains("active")) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "visible";
-  }
+  document.body.classList.toggle("no-scroll");
 });
 
 closeNavigationBars.forEach((closeNavigation) => {
   closeNavigation.addEventListener("click", () => {
     navigationBars.classList.toggle("active");
     openBtn.classList.toggle("rotate");
-    if (navigationBars.contains("active")) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "visible";
-    }
+    document.body.classList.remove("no-scroll");
   });
 });
 

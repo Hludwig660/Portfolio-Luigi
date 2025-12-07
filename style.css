@@ -20,6 +20,10 @@ body {
   min-height: 100vh;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 section.skills {
   scroll-margin: -30px;
 }
@@ -137,7 +141,7 @@ nav {
   font-size: 2rem;
 }
 
-.active {
+.bars-navigation.active {
   transform: translateX(0);
 }
 
@@ -145,7 +149,7 @@ nav {
   left: -150vw;
 }
 
-.rotate {
+#openBtn.rotate {
   transform: rotate(90deg);
 }
 
