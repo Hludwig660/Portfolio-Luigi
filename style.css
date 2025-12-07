@@ -68,11 +68,11 @@ nav {
   font-size: 2rem;
   display: none;
   cursor: pointer;
-  transition: all 300ms;
 }
 
 #openBtn.visibility {
-  opacity: 0;
+  filter: opacity(0);
+  -webkit-filter: opacity(0);
 }
 
 @media (max-width: 620px) {
