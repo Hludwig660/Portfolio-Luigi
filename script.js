@@ -8,12 +8,14 @@ const annoCorrente = document.getElementById("annoCorrente");
 
 openBtn.addEventListener("click", () => {
   navigationBars.classList.toggle("active");
+  openBtn.classList.add("visibility");
   closeBtn.classList.toggle("visible");
   document.body.classList.toggle("no-scroll");
 });
 
 closeBtn.addEventListener("click", () => {
   navigationBars.classList.remove("active");
+  openBtn.classList.remove("visibility");
   closeBtn.classList.remove("visible");
   document.body.classList.remove("no-scroll");
 });
@@ -21,6 +23,7 @@ closeBtn.addEventListener("click", () => {
 closeNavigationBars.forEach((closeNavigation) => {
   closeNavigation.addEventListener("click", () => {
     navigationBars.classList.remove("active");
+    openBtn.classList.toggle("visibility");
     closeBtn.classList.remove("visible");
     document.body.classList.remove("no-scroll");
   });
