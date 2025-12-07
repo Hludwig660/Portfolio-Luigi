@@ -145,19 +145,26 @@ nav {
 
 #closeBtn {
   position: fixed;
-  top: 1rem;
+  top: calc(1rem + env(safe-area-inset-top));
   right: 1rem;
   color: var(--primary-text);
   font-size: 2rem;
   cursor: pointer;
   transition: all 300ms;
   z-index: 10000;
-  display: block;
+  display: none;
   pointer-events: auto;
+  padding: 0.25rem;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 #closeBtn:hover {
   color: var(--secondary-text);
+}
+
+.bars-navigation.active + #closeBtn {
+  display: block;
 }
 
 .bars-navigation.active {
