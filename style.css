@@ -175,10 +175,6 @@ nav {
   left: -150vw;
 }
 
-#openBtn.rotate {
-  transform: rotate(90deg);
-}
-
 section.hero {
   background: var(--light-background);
   min-height: 100vh;
