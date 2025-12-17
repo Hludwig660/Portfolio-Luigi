@@ -189,7 +189,7 @@ section.hero {
   align-items: center;
 }
 
-@media (max-width: 878px) {
+@media (max-width: 1200px) {
   section.hero {
     padding: 2rem;
     grid-template-columns: 1fr;
@@ -218,6 +218,13 @@ section.hero {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+
+@media (max-width: 1200px) {
+  .title h1 {
+    font-size: 3.5rem;
+  }
+}
+
 @media (max-width: 620px) {
   .title h1 {
     font-size: 2rem;
@@ -230,6 +237,13 @@ section.hero {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+
+@media (max-width: 1200px) {
+  .title p:nth-child(2) {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 620px) {
   .title p:nth-child(2) {
     font-size: 1.2rem;
@@ -264,6 +278,14 @@ section.hero {
   border: 4px solid var(--background);
   box-shadow: 10px 10px 5px var(--background);
 }
+
+@media (max-width: 1200px) {
+  .title-image img {
+    height: 325px;
+    width: 325px;
+  }
+}
+
 @media (max-width: 620px) {
   .title-image img {
     width: 250px;
