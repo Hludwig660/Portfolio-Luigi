@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
     button.className = "back-to-top";
     button.innerHTML = '<i class="ri-arrow-up-line" aria-hidden="true"></i>';
     button.setAttribute("aria-label", "Torna all'inizio della pagina");
-  
+
     document.body.appendChild(button);
 
     window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 500) {
+      if (window.pageYOffset > 700) {
         button.style.opacity = "1";
         button.style.visibility = "visible";
       } else {
