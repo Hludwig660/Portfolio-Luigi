@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     button.className = "back-to-top";
     button.innerHTML = '<i class="ri-arrow-up-line" aria-hidden="true"></i>';
     button.setAttribute("aria-label", "Torna all'inizio della pagina");
+    button.setAttribute("type", "button");
 
     document.body.appendChild(button);
 
@@ -26,6 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   const typingEffect = () => {
+    // Check for reduced motion preference
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) return;
+
     const element = document.querySelector(".description-card h2");
 
     const text = element.textContent;
