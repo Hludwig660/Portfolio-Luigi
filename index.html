@@ -9,20 +9,20 @@
       content="Benvenuti nel sito di Iorio Luigi. Studente di Informatica con un forte interesse per lo Sviluppo Web. Esplora le mie Tecnologie."
     />
     <title>Portfolio - Luigi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
-      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     />
+    <link rel="preload" href="images/avatar.jpg" as="image" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav class="navigation">
         <div class="name">
-          <i class="ri-square-fill" aria-hidden="true"></i>
+          <img src="images/square-fill.svg" aria-hidden="true" />
           <a href="#">Iorio Luigi</a>
         </div>
         <ul class="nav-links">
@@ -39,6 +39,8 @@
             src="images/avatar.jpg"
             alt="Foto profilo di Iorio Luigi"
             loading="lazy"
+            width="200"
+            height="200"
           />
           <h3>
             Iorio <br />
@@ -51,14 +53,18 @@
               href="https://www.linkedin.com/in/luigi-iorio-736499235/"
               target="_blank"
               aria-label="Profilo Linkedin"
-              ><i class="ri-linkedin-fill"></i
-            ></a>
+              ><img
+                src="images/linkedin-fill.svg"
+                alt="Profilo Linkedin Iorio Luigi"
+            /></a>
             <a
               href="https://github.com/Hludwig660"
               target="_blank"
               aria-label="Profilo GitHub"
-              ><i class="ri-github-fill"></i
-            ></a>
+              ><img
+                src="images/github-fill.svg"
+                alt="Profilo GitHub Iorio Luigi"
+            /></a>
           </div>
         </div>
         <div class="description-card">
@@ -104,14 +110,14 @@
               href="https://www.linkedin.com/in/luigi-iorio-736499235/"
               target="_blank"
               aria-label="Visita il profilo LinkedIn di Luigi Iorio (si apre in una nuova scheda)"
-              ><i class="ri-linkedin-fill" aria-hidden="true"></i
-            ></a>
+              ><img src="images/linkedin-fill.svg" aria-hidden="true"
+            /></a>
             <a
               href="https://github.com/Hludwig660"
               target="_blank"
               aria-label="Visita il profilo GitHub di Luigi Iorio (si apre in una nuova scheda)"
-              ><i class="ri-github-fill" aria-hidden="true"></i
-            ></a>
+              ><img src="images/github-fill.svg" aria-hidden="true"
+            /></a>
           </div>
         </div>
       </div>

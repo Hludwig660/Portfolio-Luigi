@@ -16,6 +16,7 @@ input:focus {
 img {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 body {
@@ -38,9 +39,8 @@ body {
   justify-content: center;
 }
 
-.navigation .name i {
-  font-size: 1.5rem;
-  color: hsl(221, 100%, 50%);
+.navigation .name img {
+  width: 20px;
 }
 
 .navigation .name > a {
@@ -97,11 +97,11 @@ main {
 @keyframes appear {
   0% {
     opacity: 0;
-    left: 0;
+    transform: translate(-100%, -50%);
   }
   100% {
     opacity: 1;
-    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -163,10 +163,8 @@ main {
   background-color: #fff;
 }
 
-.card .about-card .about-card-footer > a {
-  text-decoration: none;
-  color: hsl(0, 0%, 0%);
-  font-size: 1.5rem;
+.card .about-card .about-card-footer img {
+  width: 20px;
 }
 
 .card .description-card {
@@ -239,6 +237,10 @@ main {
   color: hsl(221, 100%, 50%);
 }
 
+.footer .follow a img {
+  width: 20px;
+}
+
 /* Resume section */
 .main-resume {
   padding: 100px 30%;
@@ -252,9 +254,8 @@ main {
   justify-content: center;
 }
 
-.resume-title i {
-  color: hsl(221, 100%, 50%);
-  font-size: 24px;
+.resume-title img {
+  width: 24px;
 }
 
 .experience-title {
@@ -320,8 +321,14 @@ main {
   flex-wrap: wrap;
 }
 
-.skills ul li i {
-  color: hsl(221, 100%, 50%);
+.skills ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5ch;
+}
+
+.skills ul li img {
+  width: 18px;
 }
 
 .languages {

@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (prefersReducedMotion) return;
 
     const element = document.querySelector(".description-card h2");
+    if (!element) return;
 
     const text = element.textContent;
     element.textContent = "";
@@ -44,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         clearInterval(timer);
       }
-    }, 100);
+    }, 50); // Faster typing for better UX
   };
 
   createBackToTopButton();
