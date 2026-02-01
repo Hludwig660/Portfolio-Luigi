@@ -24,11 +24,18 @@ body {
 
 /* Navigation */
 .navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 10vh;
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
 .navigation .name {
@@ -163,6 +170,11 @@ main {
 
 .card .about-card .about-card-footer img {
   width: 20px;
+  transition: 0.3s ease;
+}
+
+.card .about-card .about-card-footer img:hover {
+  transform: translateY(-3px);
 }
 
 .card .description-card {
@@ -205,10 +217,12 @@ main {
 
 /* Footer */
 .footer {
+  margin-top: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+  background-color: #fff;
 }
 
 .footer .contact {
@@ -237,6 +251,11 @@ main {
 
 .footer .follow a img {
   width: 20px;
+  transition: all 0.3s ease;
+}
+
+.footer .follow a img:hover {
+  transform: translateY(-3px);
 }
 
 /* Resume section */
