@@ -463,7 +463,7 @@ main {
     transform: none;
     top: auto;
     left: auto;
-    margin: 2rem auto;
+    margin: 8rem auto 2rem;
     animation: none;
   }
 
@@ -514,6 +514,7 @@ main {
 
   .main-resume {
     padding: 20px 5%;
+    margin-top: 6rem;
   }
 
   .experience-title {
