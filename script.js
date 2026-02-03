@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         clearInterval(timer);
       }
-    }, 50); // Faster typing for better UX
+    }, 50);
   };
 
   createBackToTopButton();
